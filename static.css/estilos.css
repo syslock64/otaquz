@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'AftasansRegular';
+    src: url('fonts/afta-sans-fontfacekit/AftaSansThin-Regular-webfont.eot');
+    src: url('fonts/afta-sans-fontfacekit/AftaSansThin-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/afta-sans-fontfacekit/AftaSansThin-Regular-webfont.woff') format('woff'),
+         url('fonts/afta-sans-fontfacekit/AftaSansThin-Regular-webfont.ttf') format('truetype'),
+         url('fonts/afta-sans-fontfacekit/AftaSansThin-Regular-webfont.svg#AftasansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body,ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	font-family: Arial;
+	font-size:13px;
+}
+body{height:100%;padding:50px 0;}
+img{display:block;}
+#busqueda,#logo,#panel{
+	position: absolute;
+}
+#busqueda{
+	left:150px;
+	border-radius: 0.5em;
+	border: solid 2px #b9b9b9;
+	width: 220px;
+	height:26px;
+	position: absolute;
+}
+#busqueda input{
+	border: none;
+	border-radius: 0.5em 0 0 0.5em;
+	display: block;
+	height:26px;
+	margin: 0;
+	padding: 0;
+	text-indent: 0.5em;
+	width: 195px;
+	position: absolute;
+	left: 0;
+}
+#busqueda #busqueda_lista{
+	background-image:url(../static.img/icons_interface.png);
+	background-position: 6px -46px;
+	cursor: pointer;
+	height:26px;
+	position: absolute;
+	right: 0;
+	width: 26px;
+}
+#busqueda #busqueda_lista ul{
+	display: none;
+	left: -27px;
+	position: absolute;
+	text-align: right;
+	top: 26px;
+}
+
+#logo i{
+	background-image: url(../static.img/logo2.png);
+	display: block;
+	height:29px;
+	width:121px;
+}
+#panel{
+	right:0;
+}
+/*#panel-articulos ul{
+	display: block;
+	/*margin: 0 -0.5em;
+	width: 972px;
+	margin: 0 auto;
+}
+#panel-articulos li{
+	float: left;
+	padding: 0.5em;
+}*/
+#panel-articulos .artic-content{
+	background-color: #fff;
+	border-radius: 4px 4px;
+	-webkit-border-radius: 4px 4px;
+	-moz-border-radius: 4px 4px;
+	-ms-border-radius: 4px 4px;
+	-o-border-radius: 4px 4px;
+	box-shadow:0 0 10px rgba(0,0,0,0.1);
+	float:left;
+	margin:0.5%;
+	padding:0.5%;
+	width:23%;
+}
+#panel-articulos .artic-content img{
+	border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	-ms-border-radius: 4px 4px 0 0;
+	-o-border-radius: 4px 4px 0 0;
+	width: 100%;
+}
+#panel-secciones{
+	background-color: grey;
+	padding:0 1%;
+}
+#panel-secciones li{
+	background-image: url(../static.img/buttons_img.jpg);
+	background-repeat: no-repeat;
+	color:white;
+	height: 124px;
+	line-height: 124px;
+	float: left;
+	font-size: 1.8em;
+	margin: 10px 1%;
+	text-align: center;
+	width: 18%;
+}
+#panel-secciones .ani{
+	background-position: center 0;
+}
+#panel-secciones .trl{
+	background-position: center -126px;	
+}
+#panel-secciones .sug{
+	background-position: center -252px;
+}
+#panel-secciones .mng{
+	background-position: center -378px;
+}
+#panel-secciones .jms{
+	background-position: center -504px;
+}
+#panel-slider{position: relative;}
+#slider-boton a{
+	background-image: url(../static.img/icons_interface.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 26px;
+	margin-top: 13px;
+	position: absolute;
+	top:50%;
+	width:19px;
+	z-index: 10;
+}
+#slider-imagen{
+	width:100%;
+}
+#slider-imagen li{
+	display:none;
+	z-index: 1;
+}
+#slider-imagen li.activo{
+	display:block;
+	z-index: 3;
+}
+#slider-imagen li.desactivando{
+	display:block;
+	z-index: 2;
+}
+#slider-imagen img{
+	width: 100%;
+}
+#slider-info{
+	position: absolute;
+	bottom: 0;
+	color: whitesmoke;
+	left: 13%;
+	margin-bottom: 20px;
+	width: 450px;
+	text-shadow: -1px 1px 0.4em rgba(0,0,0,0.9);
+}
+#slider-info .comentario{
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: bold;
+}
+#slider-info h3{
+	font-size: 3em;
+	line-height: 1em;
+	padding: 0;
+	margin: 0.2em 0;
+}
+#slider-info h4{
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0;
+}
+#slider-info a{
+	color: whitesmoke;
+	display: inline-block;
+	font-size: 1.2em;
+	height: 23px;
+	line-height: 23px;
+	margin:1em 0;
+	text-decoration: none;
+}
+#slider-info i{
+	background-image: url(../static.img/icons_interface.png);
+	background-position: -3px -3px;
+	display: inline-block;
+	height: 23px;
+	width: 23px;
+	vertical-align: middle;
+}
+#slider-puntero{
+	bottom: 10%;
+	left: 50%;
+	margin-left: -40px;
+	position: absolute;
+}
+#slider-puntero li{float: left;}
+#slider-puntero i{
+	background-image: url(../static.img/icons_interface.png);
+	background-position: -3px -37px;
+	cursor: pointer;
+	display: inline-block;
+	height:8px;
+	margin:5px;
+	width: 8px;
+}
+.ancho{
+	min-width: 1024px;
+}
+.artic-titulo{
+	color: #6b6b6b;
+	font-size:1.1em;
+	font-weight: bold;
+	line-height: 1.1em;
+}
+.artic-tiempo{
+	color: #999;
+	font-size: 0.8em;
+}
+.bg-negro{
+	background-color: black;
+}
+.bg-gris{
+	background-color: #282828;
+}
+.bg-smoke{background-color: #f5f5f5;}
+.bloque_usuario li{
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 10px;
+}
+.bloque_usuario span{
+	line-height: 32px;
+	padding:5px;
+}
+.bloque_usuario img{
+	display: inline-block;
+	vertical-align: top;
+}
+.cabecera{
+	background-color: white;
+	height:32px;
+	position:relative;
+	padding:10px 0;
+}
+.clear{clear: both;}
+.esp{
+	padding:0 2em;
+}
+.esphv2{
+	padding:2em;
+}
+.espp2x0{
+	padding:0 2%;
+}
+.espp2x1{
+	padding:1% 2%;
+}
+.espText{
+	padding:0.4em;
+}
+.f_adelante{
+	background-position:-30px -3px;
+	left:10%;
+}
+.f_atras{
+	background-position:-57px -3px;
+	right:10%;
+}
+.list-der,.list-izq{position: absolute;height: 16px;top:50%;margin-top:-0.5em;}
+.list-der{right: 0;}
+.list-izq{left: 0;}
+.list-h li{
+	float:left;
+	padding:0 1em;
+}
+.list-h li a{
+	color:#AAAAAA;
+	display: block;
+	text-decoration: none;
+}
+.list-h li a:hover{
+	color:#F8A450;
+}
+.marg{
+	margin:0 2em;
+}
+.piepagina{	position: relative;margin: 0 2%;padding:2em 0;}
+.sect-titulo{
+	color: #999;
+	font-size: 2em;
+	font-family: AftasansRegular;
+	font-weight: 700;
+	padding: 0.5em 0;
+}
+.statico-top,.statico-bottom{
+	background-color: white;
+	left: 0;
+	position: fixed;
+
+	width: 100%;
+	z-index: 30;
+}
+.statico-top{
+	top: 0;
+}
+.statico-bottom{
+	bottom: 0;
+}
+.shadowb{
+	box-shadow: 0 1px 10px black;
+}
+.shadowt{
+	box-shadow: 0 -1px 10px black;
+}

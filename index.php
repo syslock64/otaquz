@@ -14,5 +14,6 @@
 	
 	
 		require_once(__DIR_MODEL__."/portal.contenedor.phtml");
+		;;
 
 ?>
